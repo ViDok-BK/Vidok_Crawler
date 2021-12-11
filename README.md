@@ -1,4 +1,6 @@
 # Auto_download_Vidok
+## 
+```pip install selenium```
 ## Path
 ### Thay đổi path_save đến thư mục chưa file tải về:
 ```path_save = "path_to_folder"```
