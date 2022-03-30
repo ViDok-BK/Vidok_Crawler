@@ -11,7 +11,7 @@ import os
 def get_data():
     # Đường dẫn đến thư mục chưa các file được download
     current_dir = os.getcwd()
-    path_save = current_dir + "/data/complex_ligand"
+    path_save = current_dir + "/complex_ligand"
 
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
@@ -19,7 +19,7 @@ def get_data():
     options.add_experimental_option("prefs",prefs)
 
     # Đường dẫn đến file chromedriver
-    browser = webdriver.Chrome(executable_path=current_dir + '/data/chromedriver',   chrome_options = options)
+    browser = webdriver.Chrome(executable_path=current_dir + '/chromedriver',   chrome_options = options)
     browser.get('https://vidok.chpc.utah.edu/web.top.all.time.php')
 
     select  = Select(browser.find_element_by_xpath('//*[@id="rs_tbl_length"]/label/select'))
